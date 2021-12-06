@@ -44,7 +44,6 @@ class ManagerTest {
         Ticket[] expected = new Ticket[]{};
         Ticket[] actual = manager.search(fromAirport, toAirport);
 
-        Arrays.sort(actual);
 
         assertArrayEquals(expected, actual);
     }
@@ -65,8 +64,6 @@ class ManagerTest {
         Ticket[] expected = new Ticket[]{};
         Ticket[] actual = manager.search(fromAirport, toAirport);
 
-        Arrays.sort(actual);
-
         assertArrayEquals(expected, actual);
     }
 
@@ -86,7 +83,6 @@ class ManagerTest {
         Ticket[] expected = new Ticket[]{};
         Ticket[] actual = manager.search(fromAirport, toAirport);
 
-        Arrays.sort(actual);
 
         assertArrayEquals(expected, actual);
     }
@@ -106,8 +102,6 @@ class ManagerTest {
 
         Ticket[] expected = new Ticket[]{fromMoscowToKazanMorningSVOKZN};
         Ticket[] actual = manager.search(fromAirport, toAirport);
-
-        Arrays.sort(actual);
 
         assertArrayEquals(expected, actual);
     }
