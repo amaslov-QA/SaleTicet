@@ -18,30 +18,44 @@ public class Ticket implements Comparable<Ticket>{
 
     @Override
     public int compareTo(Ticket t) {
+
         return this.price - t.price;
     }
 
     public int getId() {
+
         return id;
     }
 
     public void setId(int id) {
+
         this.id = id;
     }
 
     public String getDepartureAirport() {
+
         return departureAirport;
     }
 
     public void setDepartureAirport(String departureAirport) {
+
         this.departureAirport = departureAirport;
     }
 
     public String getArrivalAirport() {
+
         return arrivalAirport;
     }
 
     public void setArrivalAirport(String arrivalAirport) {
+
         this.arrivalAirport = arrivalAirport;
+    }
+
+    public int getTravelTime() {
+        return travelTime;
+    }
+    public int setTravelTime() {
+        return travelTime;
     }
 }

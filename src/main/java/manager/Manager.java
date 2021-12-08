@@ -4,6 +4,8 @@ package manager;
 import domain.Ticket;
 import repository.Repository;
 
+import java.sql.Array;
+import java.util.Arrays;
 import java.util.Objects;
 
 public class Manager {
@@ -16,6 +18,7 @@ public class Manager {
 
 
     public void add(Ticket ticket) {
+
         repository.save(ticket);
     }
 
@@ -32,6 +35,7 @@ public class Manager {
                 System.arraycopy(result, 0, tmp, 0, result.length);
                 tmp[tmp.length - 1] = ticket;
                 result = tmp;
+                Arrays.sort(result);
             }
 
         }
